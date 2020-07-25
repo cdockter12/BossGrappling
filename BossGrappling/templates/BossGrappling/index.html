@@ -1,0 +1,232 @@
+{% extends 'BossGrappling/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid" id='lead-container'>
+    <div class="jumbotron text-center" id="video-container">
+        <video id="main-video" loop="true" autoplay="true" muted="true" preload="true">
+            <source src="{% static 'videos/Website_video.mp4' %}" type='video/mp4'></video>
+        <div class='text-light' id="inside-header-text">
+            <h1 class="display-3">Boss Grappling <span class='text-danger'>Brazilian Jiu-Jitsu</span></h1>
+            <p class="lead display-5">
+                Join a Family. Not a Gym.
+            </p>
+            <hr class="my-4" />
+            <a class="btn btn-danger btn-lg" href="{% url 'appointment-confirm' %}" role="button">Try it Free</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!-- Start of member testimonials -->
+    <h2 class="display-5">
+        Here's What Current Members Are Saying:
+    </h2>
+    <h4><img src="{% static 'images/isaac.jpg' %}" alt="" id='portrait'> Isaac McClarren</h4>
+    <p><em>"Hands down the best place to train in the upstate. Everyone here is super respectful and courteous."</em>
+    </p>
+    <h4><img src="{% static 'images/randy.jpg' %}" alt="" id='portrait'> Randy Fang</h4>
+    <p><em>"I love Boss Grappling because it's a great learning environment and everyone treats each other
+            like
+            family."</em>
+    </p>
+    <h4><img src="{% static 'images/stefan.jpg' %}" alt="" id='portrait'> Stefan Dann</h4>
+    <p><em>"After training at multiple schools and searching for a Jiu-Jitsu Gym, Boss Grappling was my favorite in the
+            upstate."</em></p>
+    <hr />
+    <!-- Start of the FAQ Section -->
+    <h2 class="display-5">
+        This Sounds Like Fun, But...
+    </h2>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        What is Brazilian Jiu-Jitsu?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Brazilian jiu jitsu is a sport, self-defense system, and a fitness program. It has proven to be the
+                    most practical and effective self-defense system in the world. It relies on leverage and technique,
+                    rather than strength and size. This allows you to defend yourself against much bigger, stronger
+                    attackers. As a result, BJJ is a great sport for everyone – including women and kids.
+                    It is one of the fastest growing martial arts, due (in part) to its great success in the UFC
+                    (Ultimate Fighting Championship) and Mixed Martial Arts in general. BJJ focuses on grappling and
+                    ground fighting with the goal of getting into a position to force an attacker or opponent to submit
+                    or give up.
+
+                    BJJ is also an intense, aerobic and anaerobic workout so your overall health and fitness will
+                    improve, including your flexibility, strength, cardiovascular fitness, ability to burn fat, and
+                    muscular endurance.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        What's the workout like?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Brazilian jiu-jitsu is one of the best workouts you can get, and it provides far better results than
+                    a typical aerobic workout. It is also much more fun and interactive than most exercise programs, so
+                    you end up working out more and harder. Many people practice it primarily for the health/exercise
+                    benefits, which increase muscle tone and reduce body fat while improving your balance, coordination,
+                    cardio vascular capacity, and muscular endurance.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        What does my membership include?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    We're proud to offer unlimited access without enrollment fees, application fees, or contracts. Come
+                    train as many times as you would like every month, seven days a week.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        What do I wear to practice or to train?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    You generally wear either a gi (sometimes called a kimono) or nogi attire to practice/train. If you
+                    are in your trial classes, you can wear any comfortable clothing and we will loan you the
+                    appropriate attire. A gi consists of a cotton jacket, reinforced cotton pants, and a belt. It was
+                    adapted from the uniforms used in traditional martial arts like karate. When using the gi, you and
+                    your opponent have
+                    more “things” to hold onto and use against each other.
+
+                    We also practice and compete (for those who want to compete) without the gi. This is called “nogi”
+                    jiu jitsu or “submission grappling”. The “nogi” attire consists of fight/board shorts and a rash
+                    guard.
+
+                    *Both Males and females should consider wearing a rash guard and spandex shorts under the gi.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        Is BJJ safe?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    Jiu jitsu is a very safe sport, and safety is a core principle at Boss Grappling. Our mat etiquette,
+                    curriculum design, practice process, and instruction methods all ensure
+                    safety first.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        Am I too old for BJJ?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    NO. Anyone, at any age, can do jiu jitsu. Boss Grappling has students ranging in age from 6 to 65.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                        aria-expanded="false" aria-controls="collapseSeven">
+                        How should I prepare for my first class?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body">
+                    No preparation is required. Just bring your attire (gi or nogi), flip flops, and come ready to learn
+                    and have fun! If you don’t have a gi, you can borrow one of ours for your introductory classes.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                        aria-expanded="false" aria-controls="collapseEight">
+                        Do I need to be strong, flexible, or in good shape?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body">
+                    No. You do not need to be strong, flexible, or in particularly good shape to start jiu jitsu. By
+                    practicing jiu jitsu, you will most certainly improve your strength, flexibility, and conditioning
+                    (plus balance, coordination, and more), but you do not need to have those traits to begin with.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingNine">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                        aria-expanded="false" aria-controls="collapseNine">Do I need to compete?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                <div class="card-body">
+                    No. The majority of people who learn and train jiu jitsu do not compete. Of course, competition
+                    can be a reason to set goals and a great way to challenge and test yourself. We encourage anyone
+                    who wants to compete to do so, but there is no expectation or requirement to do it. Come learn,
+                    get in shape, and enjoy the sport. You can decide later if you’d like to compete.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTen">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                        aria-expanded="false" aria-controls="collapseTen">
+                        How do I get started?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                <div class="card-body">
+                    Today is the day you can begin your journey that will definitely change your life. Click <a
+                        href="{% url 'appointment-confirm' %}">Here and Sign Up for a FREE Brazilian Jiu-Jitsu
+                        Class.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center bottom" id='bottom-space-btn'>
+        <a class="btn btn-danger btn-lg" href="{% url 'appointment-confirm' %}" role="button">Try it Free</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,222 @@
+* {
+  transition: all 0.2s;
+  font-family: "Oswald", sans-serif;
+}
+
+#lead-container {
+  margin: 0;
+  padding: 0;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 150px;
+  overflow: hidden;
+  border-radius: 0 !important;
+}
+
+#image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#inside-header-text {
+  position: relative;
+  margin-top: 175px;
+}
+
+#inside-header-text-about {
+  position: relative;
+  margin-top: 50px;
+}
+
+#main-video {
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  filter: brightness(40%);
+  padding-bottom: 175px;
+}
+
+/* Navbar Options */
+.navbar {
+  opacity: 1;
+  transition: opacity top 0.5s ease;
+}
+
+.navbar-hide {
+  top: -56px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+#portrait {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fa {
+  font-size: 35px;
+  margin: 10px;
+  outline: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.fa:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  outline: none;
+  text-decoration: none;
+}
+
+iframe {
+  margin: 10px auto;
+}
+
+.navbar .navbar-collapse .navbar-brand {
+  box-shadow: none;
+  border: none;
+}
+
+.img-thumbnail {
+  height: 360px;
+  width: 360px;
+  border: none;
+  outline: none;
+}
+
+.about-thumbnail {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.portrait-thumbnail {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.portrait-thumbnail:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.about-thumbnail:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+#schedule {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+#schedule:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+.img-thumbnail:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+#bottom-space-btn {
+  padding-top: 20px;
+}
+
+/* About Us jumbotron styling */
+.jumbotron-image {
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding-bottom: 1100px;
+  padding-right: 0px;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  filter: brightness(40%);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  background: none;
+  border: none;
+}
+
+.modal-content img {
+  transform: none;
+  cursor: auto;
+}
+
+.modal-body {
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.modal-footer {
+  border: none;
+  margin-top: 5px;
+
+  @media (min-width: $bootstrap-lg) {
+    margin-top: 40px;
+  }
+}
+
+.modal-footer .btn {
+  margin: auto;
+  border: solid 2px white;
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 0.2em 0.7em;
+}
+
+.modal-footer .btn:hover {
+  background: white;
+  color: black;
+}
+
+.mapid {
+  position: relative;
+  text-align: right;
+  height: auto;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 360px;
+  width: 100%;
+  margin-bottom: 20px;
+}

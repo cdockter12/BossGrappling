@@ -1,0 +1,16 @@
+{% extends 'BossGrappling/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid" id="image-container">
+    <img src="{% static 'images/wallpaper.png' %}" alt="" class='jumbotron-image'>
+    <div class="container text-light" id="inside-header-text-about">
+        <h1 class="display-4">You're One Step Away!</h1>
+        <p class="lead">We'd put a contact form here, but we
+            respond faster to text messages.</p>
+        <p>Call or text Roy at
+            <strong>864-908-8379</strong> for a free trial.</p>
+    </div>
+</div>
+
+{% endblock %}

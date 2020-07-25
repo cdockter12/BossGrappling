@@ -1,0 +1,30 @@
+{% extends 'BossGrappling/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid" id="image-container">
+    <img src="{% static 'images/wallpaper.png' %}" alt="" class='jumbotron-image'>
+    <div class="container text-light" id="inside-header-text-about">
+        <h1 class="display-4">Schedule</h1>
+        <p class="lead">Don't Miss Our Next Class!</p>
+    </div>
+</div>
+<div class="container-fluid justify-content-center" data-toggle="modal" data-target="#exampleModal">
+    <img src="{% static 'images/schedule3.png' %}" alt="" class='justify-content-center align-center' id="schedule">
+</div>
+<!-- Modal Start -->
+<div class="modal bd-example-modal-lg fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="{% static 'images/schedule3.png' %}" alt="" class='justify-content-center align-center'
+                    id="schedule">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
